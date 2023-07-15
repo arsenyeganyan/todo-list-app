@@ -6,18 +6,23 @@ const store = (set) => ({
     tasks: [],
     addTask: (title, id, state) =>
         set(produce((store) => {
-            store.tasks.push({ title, id, state });
-    })),
+            store.tasks.push({ title, id, state })}
+        ),
+        false,
+        "addTask"
+    ),
     deleteTask: (id) => 
         set((store) =>
-            ({ tasks: store.tasks.filter(task => task.id !== id) })
+            ({ tasks: store.tasks.filter(task => task.id !== id) }),
+            false,
+            "deleteTask"
         ),
     moveTask: (title, id, state) => 
         set((store) => ({ 
             tasks: store.tasks.map(task => 
                 task.id === id ? { title, id, state } : task
             )
-        }))
+        }), false, "moveTask")
 })
 
 export const useStore = create(
