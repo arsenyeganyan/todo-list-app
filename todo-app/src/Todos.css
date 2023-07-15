@@ -1,0 +1,49 @@
+.task--container{
+    color: white;
+    margin: 25px 0;
+    min-height: 7rem;
+    background: var(--THE-BLACK);
+    width: 35em;
+    border-radius: 6px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    flex-direction: column;
+}
+
+.task--container span{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+    background: var(--THE-BLACK-DARK);
+    padding: 0.3rem;
+    border-radius: 4px;
+    width: fit-content;
+    padding: 5px;
+    align-self: flex-end;
+}
+
+.todo{
+    background: white;
+    color: black;
+    margin: 20px 10px 10px 10px;
+    border-radius: 6px;
+    padding: 4px;
+    width: fit-content;
+    max-width: 33rem;
+}
+
+.todo--title{
+    font-size: 20px;
+    padding: 2px;
+    /* text-overflow: clip; */
+    word-wrap: break-word;
+}
+
+.delete--btn, .move--btn{
+    all: unset;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 20px;
+}

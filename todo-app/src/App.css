@@ -1,0 +1,68 @@
+:root{
+    --THE-BLUE: #8d9abd;
+    --THE-BLUE-DARK: #789ffa;
+    --THE-BLUE-DARKER: #608fff;
+    --THE-BLACK: #565656;
+    --THE-BLACK-DARK: #2f2f2f;
+    --THE-BLACK-DARKER: #4b4a4a;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: var(--THE-BLUE);
+    font-family: 'Golos Text', sans-serif;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app h1{
+    font-size: 50px;
+    margin-right: 100px;
+}
+
+.date{
+    font-size: 1.25rem;
+    color: rgb(43, 43, 43);
+}
+
+.app .header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.add--btn{
+    all: unset;
+    background: var(--THE-BLUE-DARK);
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.add--btn:hover{
+    background: var(--THE-BLUE-DARKER);
+    transition: all 0.2s;
+}
+
+.app input{
+    border: none;
+    border-radius: 4px;
+    background: var(--THE-BLACK);
+    color: white;
+    margin-bottom: 3rem;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    width: 35%;
+}
+
+.app input:focus{
+    background: var(--THE-BLACK-DARKER);
+}
